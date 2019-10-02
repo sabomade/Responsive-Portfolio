@@ -1,0 +1,249 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-image: url("../img/bananas.png");
+    background-repeat: repeat;
+}
+
+.nav{
+    background: #FFC300;
+}
+
+.nav-contents{
+    max-width: 960px;
+    margin: auto;
+    height: 55px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+h1 {
+    /* display: block; */
+    background: #A5A5A4;
+
+    font-family: 'Arvo', serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 55px;
+    padding: 0px 10px;
+}
+
+/* basic nav styling */
+/* ul{
+    list-style-type: none;
+} */
+
+.topnav{
+    width: 500px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    /* overflow: hidden; */
+}
+
+.topnav a{
+    display: inline;
+    padding: 1em;
+    
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    
+}
+.topnav a:hover{
+    background: #FFB300;
+}
+
+/* .topnav li{
+    white-space: nowrap;
+} */
+
+.topnav a.icon{
+    display: none;
+}
+
+/* mobile nav styling */
+
+
+.container{
+    max-width: 960px;
+    padding: 20px 20px;
+    background: #FEFDF9;
+    margin: 20px auto;
+    
+}
+
+h2 {
+    font-family: 'Arvo', serif;
+    font-size: 30px;
+    line-height: 2em;
+    font-weight: bold;
+
+    padding-bottom: .5em;
+    margin-bottom: .7em;
+    border-bottom: 3px solid #FFB300;
+}
+
+p, .contact{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 10px;
+}
+
+/* about page css */
+.about{
+    display: flex;
+}
+
+.pic{
+    width: 200px;
+    height: 200px;
+    align-self: baseline;
+}
+
+
+/* portfolio page css */
+
+.port-pics{
+    display:flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+
+.port-pics > div{
+    position: relative;
+    margin: 10px;
+}
+
+.port-pics p{
+    position: absolute;
+    bottom: 20px;
+    margin: 0px;
+    padding: 10px;
+    width: 200px;
+    
+    background: #FFC300;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.port-pics img{
+    width: 200px;
+    height: 200px;
+}
+
+/* contact page css */
+.social{
+    margin-top: 10px;
+}
+.social a{
+    margin: 0px 30px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/* sticky footer css */
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    text-align: center;
+
+    border-top: 3px solid #A5A5A4;
+    background: #FEFDF9;
+
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.footer > div{
+    margin:10px;
+    line-height: .5em;
+    /* opacity: 1; */
+}
+
+.credit a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.credit p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    /* padding-top: 10px; */
+}
+
+/* for smaller screens */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        justify-content: flex-end;
+        display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      display: block;
+      text-align: left;
+    }
+  }
