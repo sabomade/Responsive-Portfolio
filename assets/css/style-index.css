@@ -221,29 +221,17 @@ input[type=text], textarea {
     /* padding-top: 10px; */
 }
 
-/* for smaller screens */
-@media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
+/* for screen 980px and larger */
+@media screen and (max-width: 980px){
+    .nav-contents{
+        width: 75%;
     }
-    
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-        justify-content: flex-end;
-        display: block;
+    .container{
+        width: 75%;
+        margin: 20px auto 100px auto;
     }
-  }
+    .nameTitle{
 
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
     }
-    .topnav.responsive a {
-      display: block;
-      text-align: left;
-    }
-  }
+
+}
