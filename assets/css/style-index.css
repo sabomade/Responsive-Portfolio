@@ -233,6 +233,16 @@ input[type=text], textarea {
     .topnav{
         width: 300px;
     }
+    .social{
+        width: 100%;
+    }
+    .social a{
+        margin: 0px 20px;
+    }
+    .credit a {
+        font-size: 9px;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 768px){
     .nav-contents{
@@ -244,6 +254,16 @@ input[type=text], textarea {
     }
     .topnav{
         width: 300px;
+    }
+    .social{
+        width: 100%;
+    }
+    .social a{
+        margin: 0px 10px;
+    }
+    .credit a {
+        font-size: 7px;
+        text-align: center;
     }
 }
 @media screen and (max-width: 640px){
@@ -263,5 +283,21 @@ input[type=text], textarea {
     .topnav{
         width: 100%;
         justify-content: center;
+    }
+    .column{
+        width: 100%;
+    }
+    .social{
+        width: 100%;
+    }
+    .social a{
+        margin: 0px 30px;
+    }
+    .credit{
+        width: 100%;
+    }
+    .credit a {
+        font-size: 10px;
+        text-align: center;
     }
 }
